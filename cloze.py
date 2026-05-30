@@ -191,7 +191,7 @@ with col_phone:
 st.markdown("---")
 
 # 설정
-pos_choice = st.selectbox("빈칸으로 만들 품사 선택", ["전체", "동사", "명사", "형용사", "부사"])
+pos_choice = st.selectbox("빈칸으로 만들 품사 선택", ["전체", "동사", "명사", "형용사", "부사","접속])
 blank_pct = st.slider("빈칸 비율 (%)", min_value=5, max_value=80, value=20, step=5)
 
 uploaded_file = st.file_uploader("Word(.docx) 파일 업로드", type=["docx"])
