@@ -29,7 +29,6 @@ except LookupError:
 
 # ---------- POS 그룹 ----------
 POS_GROUPS = {
-  POS_GROUPS = {
     "동사": {"VB", "VBD", "VBG", "VBN", "VBP", "VBZ"},
     "명사": {"NN", "NNS", "NNP", "NNPS"},
     "형용사": {"JJ", "JJR", "JJS"},
