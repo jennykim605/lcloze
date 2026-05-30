@@ -164,12 +164,29 @@ st.markdown(
     "스크롤을 내려도 지문을 계속 보면서 답을 입력할 수 있습니다."
 )
 
-# 상단 정보란 (반, 이름 등)
-col_class, col_name = st.columns(2)
+# 상단 정보란 (반, 이름, 전화번호)
+col_class, col_name, col_phone = st.columns([1, 1, 2])
+
 with col_class:
-    class_name = st.text_input("반", value="", placeholder="예: 중3A반")
+    class_name = st.text_input(
+        "반",
+        value="",
+        placeholder="예: 중3A반"
+    )
+
 with col_name:
-    student_name = st.text_input("이름", value="", placeholder="예: 홍길동")
+    student_name = st.text_input(
+        "이름",
+        value="",
+        placeholder="예: 홍길동"
+    )
+
+with col_phone:
+    phone_number = st.text_input(
+        "전화번호",
+        value="",
+        placeholder="예: 010-1234-5678"
+    )
 
 st.markdown("---")
 
