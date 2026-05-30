@@ -29,12 +29,13 @@ except LookupError:
 
 # ---------- POS 그룹 ----------
 POS_GROUPS = {
+  POS_GROUPS = {
     "동사": {"VB", "VBD", "VBG", "VBN", "VBP", "VBZ"},
     "명사": {"NN", "NNS", "NNP", "NNPS"},
     "형용사": {"JJ", "JJR", "JJS"},
     "부사": {"RB", "RBR", "RBS"},
+    "접속사": {"CC"},
 }
-
 TOKEN_CANDIDATE_RE = re.compile(r"[A-Za-z0-9\uac00-\ud7a3]+")
 
 
